@@ -39,6 +39,7 @@ class Operator(TreeNode):
     def priority(self):
         """
         abstract method witch should be overridden to return priority of the node.
+
         Boolean whether the operation is associative or not.
         For example addition is associative but subtraction is not.
         Override this property for operations where the given operation is not associative.
@@ -51,6 +52,7 @@ class Operator(TreeNode):
     def actions(self):
         """
         All custom implemented actions on different data structures.
+
         For example set - int does not exist, but we can implement it.
         :return a dictionary of functions where key is accepted parameters and value is a function which takes the
         aforementioned parameters as inputs and computes a value with them.
